@@ -1,0 +1,6 @@
+mkdir Desktop/DataRead
+touch Desktop/DataRead/file_info.txt
+ls -lh >  Desktop/DataRead/file_info.txt
+ls -lh >  Desktop/DataRead/file_info.txt
+grep 'ATM' My_Pass.txt >> Desktop/DataRead/file_info.txt
+rm -rv Desktop/Tempfile/

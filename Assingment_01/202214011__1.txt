@@ -1,0 +1,78 @@
+
+21 directories, 15 files
+├── CSE_301
+├── CSE_302
+├── CSE_303
+├── CSE_304
+├── CSE_305
+├── CSE_306
+└── CSE_307
+../../home/deadshoot333/Desktop/3_1
+    ├── list_files.txt
+    ├── SecA
+│   ├── SecA
+│   ├── SecA
+│   ├── SecA
+│   ├── SecA
+│   ├── SecA
+│   ├── SecA
+    └── SecB
+│   └── SecB
+│   └── SecB
+│   └── SecB
+│   └── SecB
+│   └── SecB
+│   └── SecB
+        └── test.txt
+    │   └── test.txt
+│       └── test.txt
+│       └── test.txt
+│       └── test.txt
+│       └── test.txt
+│       └── test.txt
+│   │   └── test.txt
+│   │   └── test.txt
+│   │   └── test.txt
+│   │   └── test.txt
+│   │   └── test.txt
+│       └── text.txt
+│   │   └── text.txt
+ 39 108 985 list_files.txt
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cd Desktop/
+mkdir 3_1
+cd 3_1
+mkdir CSE_301/ CSE_302/ CSE_303/ CSE_304/ CSE_305/ CSE_306/ CSE_307/ OS/
+mkdir CSE_301/SecA/ CSE_302/SecA/ CSE_303/SecA/ CSE_304/SecA/ CSE_305/SecA/ CSE_306/SecA/ CSE_307/SecA/ OS/SecA/
+mkdir CSE_301/SecB/ CSE_302/SecB/ CSE_303/SecB/ CSE_304/SecB/ CSE_305/SecB/ CSE_306/SecB/ CSE_307/SecB/ OS/SecB/
+touch CSE_301/SecB/text.txt CSE_302/SecB/test.txt CSE_303/SecB/test.txt CSE_304/SecB/test.txt CSE_305/SecB/test.txt CSE_306/SecB/test.txt CSE_307/SecB/test.txt OS/SecB/test.txt
+touch CSE_301/SecA/text.txt CSE_302/SecA/test.txt CSE_303/SecA/test.txt CSE_304/SecA/test.txt CSE_305/SecA/test.txt CSE_306/SecA/test.txt CSE_307/SecA/test.txt OS/SecA/test.txt
+chmod u-r CSE_301/
+mv OS/ CSE_307
+cd CSE_307/
+rm -rv OS/
+touch list_files.txt
+tree >> list_files.txt
+mv list_files.txt OS/
+mv list_files.txt CSE_307/
+mkdir Backup
+cp CSE_307/list_files.txt Backup/
+sudo su
+mv Backup ../../../../etc/
+cd ../../../../etc/Backup
+sort -o list_files.txt list_files.txt
+wc list_files.txt >> list_files.txt 
+cd ../../home/deadshoot333/Desktop/3_1
+rm -rv CSE_301/SecB/text.txt CSE_303/SecB/test.txt CSE_305/SecB/test.txt CSE_307/SecB/test.txt 
+rm -rv CSE_301/SecA/text.txt CSE_303/SecA/test.txt CSE_305/SecA/test.txt CSE_307/SecA/test.txt 
+echo "HostName" >> list_files.txt
+hostname >>list_files.txt
+echo "FullName:Arqam Bin Almas" >> list_files.txt
+echo "ID:202214011" >> list_files.txt
+echo "Section:A2" >> list_files.txt
+mv list_files.txt 202214011__1.txt
+HostName
+dsd-H110M
+FullName:Arqam Bin Almas
+ID:202214011
+Section:A2
